@@ -9,26 +9,32 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.css" rel="stylesheet">
+         <link href="css/bootstrap.css" rel="stylesheet">
         <title>Blog</title>
     </head>
     <body><br><br><br><br>
-        <style>
-            body{background-color: black}
-            center{color:whitesmoke}
-            textArea{background-color: lightgray}
-        </style>
+        
         <center>
         <form method="get" action="blog1.jsp">
             
-        <textarea rows="1" cols="50" name="about" placeholder="About"></textarea>
+            <br><br><div style="width: 70rem">
+                Author:
+            <input  class="form-control" id="inputdefault" type="text" name="author" value="Anonymous">
+            <br>
+        <textarea class="form-control" id="inputdefault" rows="1" cols="50" name="about" placeholder="About"></textarea>
         <br><br>
-        <textarea rows="5" cols="50" name="blog" placeholder="Write Something"></textarea>
-        <br><br><br>
-        <input type="text" name="author" value="Anonymous">
-        <input type="submit" value="Submit">
+        <textarea class="form-control" id="inputdefault" rows="10" cols="50" name="blog" placeholder="Description in brief"></textarea>
+        <br><br>
+            </div>
+        </center>
+        
+        <center><input class="btn btn-primary" type="submit" value="Submit"></center>
         <br><br>
         <a href="readblog1.jsp">Read blogs</a>
         </form>
-            </center>
+            
     </body>
 </html>
+
