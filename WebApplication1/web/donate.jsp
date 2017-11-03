@@ -16,13 +16,15 @@
         <form method="get" action="donate1.jsp">
             <input type="text" name="name" placeholder="Name">
             <br><br>
-            <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="Email id">
+            <input type="text" name="did"  placeholder="Donater ID">
             <br><br>
-            <input type="text" name="phone" placeholder="Phone Number">
+            <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="Email ID">
+            <br><br>
+            <input type="number" name="phone" placeholder="Phone Number">
             <br><br>
             <input type="text" name="bloodgroup" placeholder="Blood group">
             <br><br>
-            <input type="text" name="dependent" placeholder="Dependent Phone Number">
+            <input type="number" name="dependent" placeholder="Dependent Phone Number">
             <br><br>
             <input type="text" name="address" placeholder="Address">
             <br><br>
@@ -32,4 +34,6 @@
     </center>
     </body>
 </html>
+
+
 
