@@ -18,12 +18,13 @@
             String url="jdbc:mysql://localhost:3306/project66";
             String name="root";
             String password="root";
-            String query="insert into donate values(?,?,?,?,?,?)";
+            String query="insert into donate values(?,?,?,?,?,?,?)";
             Class.forName("com.mysql.jdbc.Driver");
             Connection con=DriverManager.getConnection(url,name,password);
             PreparedStatement st=con.prepareStatement(query);
             String donarname=request.getParameter("name");
-            String id=request.getParameter("email");
+            String id=request.getParameter("did");
+            String em=request.getParameter("email");
             String phone=request.getParameter("phone");
             String blood_group=request.getParameter("bloodgroup");
             String dependent=request.getParameter("dependent");
@@ -31,12 +32,13 @@
             
             st.setString(1,donarname);
             st.setString(2, id);
-            st.setString(3, phone);
-            st.setString(4,blood_group);
-            st.setString(5,dependent);
-            st.setString(6,address);
+            st.setString(3, em);
+            st.setString(4, phone);
+            st.setString(5,blood_group);
+            st.setString(6,dependent);
+            st.setString(7,address);
             
-              if(donarname.equals("")||id.equals("")||phone.equals("")||blood_group.equals("")||dependent.equals("")||address.equals(""))
+              if(donarname.equals("")||id.equals("")||phone.equals("")||blood_group.equals("")||dependent.equals("")||address.equals("")||em.equals(""))
               {
                   response.sendRedirect("donate.jsp");
               }
@@ -47,3 +49,4 @@
             %>
     </body>
 </html>
+
