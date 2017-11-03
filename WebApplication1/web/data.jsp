@@ -9,26 +9,33 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="bootstrap.min.css" rel="stylesheet">
+        <link href="bootstrap-theme.css" rel="stylesheet">
+         <link href="bootstrap.css" rel="stylesheet">
+
         <title>Data</title>
     </head>
     <body>
     <center>
         <br><br><br><br><br>
+     <div class="card-body" style="width: 20rem;">
         <form method="get" action="data1.jsp">
-            <input type="text" name="name" placeholder="Full name">
-            <br><br>
-            <input type="number" name="phone" placeholder="Phone Number">
-            <br><br>
-            <input type="number" name="age" placeholder="Age">
-            <br><br>
-            <input type="text" name="pid" placeholder="PID">
-            <br><br>
-            <input type="number" name="righteye" placeholder="Right Eye Power">
-            <br><br>
-            <input type="number" name="lefteye" placeholder="Left Eye Power">
-            <br><br>
-            <input type="submit" value="Submit">
+            <input class="form-control" id="inputdefault" type="text" name="name" placeholder="Full name">
+            <br>
+            <input class="form-control" id="inputdefault" type="number" name="phone" placeholder="Phone Number">
+            <br>
+            <input class="form-control" id="inputdefault" type="number" name="age" placeholder="Age">
+            <br>
+            <input class="form-control" id="inputdefault" type="text" name="pid" placeholder="PID">
+            <br>
+            <input class="form-control" id="inputdefault" type="number" name="righteye" placeholder="Right Eye Power">
+            <br>
+            <input class="form-control" id="inputdefault" type="number" name="lefteye" placeholder="Left Eye Power">
+            <br>
+            <input type="submit" value="Submit"class="btn btn-primary">
         </form>
+    </div>
    </center>   
     </body>
 </html>
+
