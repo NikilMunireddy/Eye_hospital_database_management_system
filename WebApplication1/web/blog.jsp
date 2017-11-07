@@ -27,6 +27,8 @@
         <br><br>
         <textarea class="form-control" id="inputdefault" rows="10" cols="50" name="blog" placeholder="Description in brief"></textarea>
         <br><br>
+        <input class="form-control" id="inputdefault" type="text" name="id" placeholder="ID">
+        <br><br>
             </div>
         </center>
         
@@ -37,4 +39,5 @@
             
     </body>
 </html>
+
 
